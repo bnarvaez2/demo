@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS tbl_users;
+
+CREATE TABLE tbl_users (
+  id BIGINT AUTO_INCREMENT  PRIMARY KEY,
+  number_id VARCHAR(250) NOT NULL,
+  first_name VARCHAR(250) NOT NULL,
+  last_name VARCHAR(250) NOT NULL,
+  email VARCHAR(250) NOT NULL,
+  password VARCHAR(250) NOT NULL,
+  status VARCHAR(250) NOT NULL
+);

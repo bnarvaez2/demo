@@ -51,7 +51,7 @@ public class DemoController {
     public ResponseEntity<Object> postMethodName(@RequestBody DiscountRequest entity) {
         DiscountResponse discount = new DiscountResponse();
         discount.setStatus(false);
-        if(!entity.getDiscountCode().isBlank()){
+        if(!entity.getDiscountCode().isBlank() && !entity.getDiscountCode().equals("InvalidCode")){
             discount.setId("20");
             discount.setHouseId(entity.getHouseId());
             discount.setUserId(entity.getUserId());
